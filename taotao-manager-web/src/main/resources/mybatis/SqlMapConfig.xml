@@ -4,7 +4,9 @@
 <configuration>
 	<!-- 配置分页插件 -->
 	<plugins>
-		<plugin interceptor=""></plugin>
+		<plugin interceptor="com.github.pagehelper.PageHelper">
+			<!-- 设置数据库类型oracle,mysql,mariadb,sqlite,hsqldb,postgresql -->
+			<property name="dialect" value="mysql"/>
+		</plugin>
 	</plugins>
-
 </configuration>
